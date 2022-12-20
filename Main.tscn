@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnmukhbt2shd5"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_y80mo"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_y80mo")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 22.0
+offset_top = 269.0
+offset_right = 648.0
+offset_bottom = 399.0
+theme_override_font_sizes/font_size = 48
+placeholder_text = "文字を入力してください"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 669.0
+offset_top = 295.0
+offset_right = 1126.0
+offset_bottom = 385.0
+theme_override_font_sizes/font_size = 48
+text = "SceneChange"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
