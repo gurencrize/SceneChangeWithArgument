@@ -3,7 +3,3 @@ extends Node2D
 
 func _ready():
     label.text = Global.text
-    pass
-
-func _process(delta):
-    pass
